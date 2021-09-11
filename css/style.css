@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Georama', sans-serif; */
+/* google font  */
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body{
+    font-family: 'Georama', sans-serif;
+}
+/* ==================================== */
+       /* common style start  */
+/* ==================================== */
+a,h1,h2,h3,h4,h5,h6,p,span{
+    color:#333;
+}
+.container{
+    width : 90%;
+    margin:auto;
+}
+/* ==================================== */
+         /* common style End */
+/* ==================================== */
+
+/* ==================================== */
+         /* Header style Start */
+/* ==================================== */
+
+header#header-section {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 2px 6px #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+nav.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+nav.navbar>div {
+    padding: 2rem 0;
+}
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo a {
+    width: 18rem;
+}
+.logo a img {
+    width: 100%;
+}
+.account {text-align: right;overflow: hidden;font-size: 1.6rem;}
+
+.account>div {
+    display: inline-block;
+    padding: 0 0.6rem;
+}
+.language {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.login-or-register {
+    border-right: 1px solid #ddd;
+}
+
+.login-or-register a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.login-or-register a span {
+    padding-left: 0.6rem;
+}
+.login-or-register 
+a span {
+    padding-left: 0.6rem;
+}
+.login-or-register a span:hover{
+    color : #DD367D;
+}
+
+.login-or-register 
+a svg.fa-user-tie {
+    font-size: 2rem;
+    color: #D70F64;
+}
+.language a {
+    text-decoration: none;
+}
+
+.language a:first-child {
+    border-right: 1px solid #333;
+    padding-right: 1rem;
+    font-weight: 500;
+}
+
+.language a:last-child {
+    opacity: 0.7;
+    padding-left: 0.7rem;
+}
+
+.my-card svg {
+    color: #D70F64;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+/* ==================================== */
+         /* Header style End */
+/* ==================================== */
+.language a {
+    text-decoration: none;
+}
+
+.language a:first-child {
+    border-right: 1px solid #333;
+    padding-right: 1rem;
+    font-weight: 500;
+}
+
+.language a:last-child {
+    opacity: 0.7;
+    padding-left: 0.7rem;
+}
+
+.my-card svg {
+    color: #D70F64;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+/* ==================================== */
+         /* Header style End */
+/* ==================================== */
+
+/* ==================================== */
+         /* Header boyd style Start */
+/* ==================================== */
+
+#header-body{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url("../images/main-home-bd.webp");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+.header-body-wrapper {
+    padding: 11rem 0;
+}
+
+.header-body-wrapper h1 {
+    font-size: 4rem;
+    width: 75%;
+    color: #333;
+    font-weight: 300;
+    padding: 2rem 0 4rem;
+    text-shadow: 2px 2px 2px #ddd;
+}
+.search-area-box {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    background: #fff;
+    box-shadow: 2px 2px 6px #aaa;
+    align-items: center;
+}
+
+.search-area-box>div {
+    padding: 2rem;
+}
+
+.search-area-input {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search-area-input input {
+    width: 100%;
+    padding: 1.8rem;
+    outline: none;
+    border: 1px solid #bbb;
+    color: #bbb;
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+.search-area-input input::placeholder{
+    color : #bbb;
+}
+.search-area-input input:focus{
+    border: 1px solid #333;
+    color:#000;
+}
+.search-area-delivery {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    align-items: center;
+}
+
+.search-area-delivery>div:nth-child(2) {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.search-area-delivery {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    align-items: center;
+}
+
+.search-area-delivery>div:nth-child(2) {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.delivery-btn button, .picup-btn button {
+    background: #D70F64;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delivery-btn button:hover, .picup-btn button:hover {
+    background: #b70c55;
+}
+/* ==================================== */
+         /* Header boyd style End */
+/* ==================================== */
+
+
+
+/* ==================================== */
+   /* Prepare food section style start */
+/* ==================================== */
+
+#prepare-food{
+    /* overflow: hidden; */
+}
+.prepare-food-wrapper{
+    box-sizing: border-box;
+    background-image: url("../images/home-vendor-bd.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.clone-h1 {
+    font-size: 13rem;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    color: #ddd;
+    opacity: 0.4;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding-left: 1rem;
+    z-index: -2;
+    user-select: none;
+}
+
+.clone-h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    position: relative;
+    top: -7.5rem;
+    z-index: -1;
+}
+.prepare-food-wrapper {
+    box-sizing: border-box;
+    margin-top: -8rem;
+    padding: 10rem 0;
+}
+.prepare-food-inner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    bottom: -20rem;
+}
+
+.prepare-food-box-wrapper {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 4rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 6px #ddd;
+}
+
+.prepare-food-box-wrapper h1 {
+    font-size: 3rem;
+    padding: 0rem 0px 2.5rem 0px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.prepare-food-box-wrapper p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+.food-box-link {
+    text-align: right;
+}
+.prepare-food-box-wrapper a {
+    background: #ea2278;
+    color: #fff;
+    padding: 1rem 5rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+    transition : 0.3s;
+}
+.prepare-food-box-wrapper a:hover{
+    background: #D70F64;
+}
+
+
+/* ==================================== */
+   /* Prepare food section style End */
+/* ==================================== */
+
+/* ==================================== */
+   /* City Section style start here */
+/* ==================================== */
+
+#city-section .clone-h1{
+    margin-top: 12rem !important;
+}
+.city-section-wrapper {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
+}
+.city-inner-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.city-image img{
+    width : 100%
+}
+.city-single-box{
+    position: relative;
+    overflow: hidden;
+}
+.city-single-box a{
+    position:absolute;
+    bottom: 1rem;
+    left : 1rem;
+    color : #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.city-single-box:hover a{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+/* ==================================== */
+   /* City Section style End here */
+/* ==================================== */
+
+
+/* ==================================== */
+   /*app section start here */
+/* ==================================== */
+
+section#app-section {
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.app-all-areaBox {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
+    background: #d70f64d6;
+    position: relative;
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 9rem 0;
+}
+.app-right-area-image img {
+    width: 100%;
+    position: relative;
+    /* transform: scale(1); */
+}
+
+.app-right-area-image {
+    width: 50%;
+    position: absolute;
+    right: -80px;
+    top: -5rem;
+    transform: scale(1.2);
+}
+.app-left-area h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.app-left-area p {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    font-weight: 300;
+}
+.app-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.app-link>div {
+    border: 1px solid #fff;
+    padding: 1rem;
+}
+.app-link>div:hover{
+    box-shadow: 2px 2px 6px #333;
+}
+.app-apple a svg, .app-googleplay a svg {
+    color: #fff;
+    font-size: 3.5rem;
+    float: left;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.app-apple a, .app-googleplay a{
+    text-decoration: none;
+}
+span.download-app {
+    font-size: 1rem !important;
+    letter-spacing: 0.2rem;
+}
+.app-apple a span, .app-googleplay a span {
+    display: block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #fff;
+}
+/* ==================================== */
+   /*app section End here */
+/* ==================================== */
+
+
+/* ==================================== */
+/* office section start  */
+/* ==================================== */
+
+/* NCTB : Common Section (Prepare food section and office section. So, here i include the same tag and css style and classess) */
+.office-wrapper{
+    box-sizing: border-box;
+    background-image: url("../images/home-corporate-bd.webp") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+.office-inner-box{
+    bottom: -11rem;
+}
+
+
+/* ==================================== */
+/* office section End  */
+/* ==================================== */
+
+
+/* ==================================== */
+/* Resturent order section Start  */
+/* ==================================== */
+
+section#resturant-order {
+    overflow: hidden;
+    padding: 12rem 0 3rem;
+}
+
+.resturant-wrapper {
+    box-sizing: border-box;
+}
+
+.resturant-wrapper h1 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.resturant-wrapper>p {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    color: #6d6c6c;
+    line-height: 2.6rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* ==================================== */
+/* Resturent order section End  */
+/* ==================================== */
+
+
+/* ==================================== */
+/*  Foodpanda support section Start   */
+/* ==================================== */
+
+section#foodpanda-support {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.foodpanda-support-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.foodpanda-support-wrapper>div {
+    padding: 2rem 0;
+}
+
+.foodpanda-support-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top : 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.foodpanda-support-top>div:last-child {
+    text-align: right;
+}
+.foodpanda-support-top>div:first-child{
+    user-select: none;
+}
+
+.foodpanda-support-top>div:first-child img {
+    width: 2.3rem;
+    float: left;
+    margin-right: 1rem;
+    margin-top: -0.2rem;
+}
+
+.foodpanda-support-top>div {
+    font-size: 1.6rem;
+    color: #b7b5b5;
+}
+
+.foodpanda-support-top>div:last-child a {
+    padding: 0.5rem 0.9rem;
+    color: #aaa;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.foodpanda-support-top>div:last-child a:hover {
+    color: #d70f64d6;
+}
+
+.foodpanda-support-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.foodpanda-support-bottom>div:first-child {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.support-link {
+    overflow: hidden;
+}
+
+.support-link ul {
+    list-style: none;
+    text-align: right;
+}
+
+.support-link ul li {
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+}
+
+.support-link ul li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.support-link ul li a:hover {
+    color: #f10c6dd6;
+}
+
+/* ==================================== */
+/*  Foodpanda support section End   */
+/* ==================================== */
+
+/* ==================================== */
+/*  Foodpanda Delivery area section start   */
+/* ==================================== */
+
+section#foodpanda-delivery-city {
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+}
+
+.foodpanda-delivery-city-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.single-delivery-box-area h2 {
+    font-size: 1.6rem;
+    color: #717171;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.single-delivery-box-area ul.delivery-list {
+    list-style: none;
+}
+
+.single-delivery-box-area ul.delivery-list li {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    margin-right: 0.2rem;
+}
+
+.single-delivery-box-area ul.delivery-list li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.2s;
+    color: #717171;
+    text-transform: capitalize;
+}
+
+.single-delivery-box-area ul.delivery-list li a:hover {
+    color: #f10c6dd6;
+}
+
+
+/* ==================================== */
+/*  Foodpanda Delivery area section End   */
+/* ==================================== */
+
+/* ==================================== */
+/*  Popular Cuisines section start   */
+/* ==================================== */
+
+section#popular-cuisines {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.popurar-cuisines-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.single-cuisines ul {
+    list-style: none;
+    text-align: left;
+}
+
+.single-cuisines ul li {
+    margin-bottom: 0.6rem;
+}
+
+.single-cuisines ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #f10c6dd6;
+}
+
+.single-cuisines ul li a:hover {
+    color: #333;
+}
+/* ==================================== */
+/*  Popular Cuisines section End   */
+/* ==================================== */
+
+/* ==================================== */
+/* Footer start  */
+/* ==================================== */
+
+footer#footer-section {
+    overflow: hidden;
+}
+
+.footer-wrapper ul {
+    text-align: center;
+    list-style: none;
+}
+
+.footer-wrapper ul li {
+    display: inline-block;
+}
+
+.footer-wrapper {
+    padding: 1rem 0rem 2rem;
+}
+
+.footer-wrapper ul li a {
+    font-size: 1.6rem;
+    padding: 0rem 0.6rem;
+    border-right: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.footer-wrapper ul li a:hover {
+    color: #f95773;
+}
+div#clone {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+div#clone a {
+    color: #f15671;
+    text-decoration: none;
+}
+/* ==================================== */
+/* Footer End  */
+/* ==================================== */
+
+/* scroll up button  */
+#scroll-up-btn {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    display : none;
+  
+}
+#scroll-up-btn svg{
+    font-size: 4rem;
+    opacity: 0.5;
+    color : #f10c6dd6;
+}
+#scroll-up-btn svg:active{
+    color: #000000;
+}
+
+/* scroll top button  */
+
+
+/* Please do not take as copyright. I designed it just for practice. I did not change any information. */
